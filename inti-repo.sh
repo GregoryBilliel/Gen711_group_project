@@ -14,5 +14,5 @@ cd data/fastqs
 
 polyg_len=200
 
-chmod +x ../code/polyGfilter.sh
+chmod +x 0../code/polyGfilter.sh
 ../code/polyGfilter.sh ${polyg_len}

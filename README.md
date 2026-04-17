@@ -1,3 +1,32 @@
-# Gen711_group_project
-Cyanobacteria thing
-Where lies the strangling fruit that came from the hands of the sinner, I shall bring forth the seeds of the dead to share with the worms that gather in the dark and surround the world with the power of their lives, while from the dimlit halls of other places, forms that never were and never could be writhe for the impatience of the few that never saw what could have been.
+# Cyanobacteria thing
+
+## Jasper C., Anne B., Greg B.  
+
+## Background  
+
+We were interested... Author et al. 2019 assembled the genome of ... We compared. 
+
+## Methods
+
+Author et al. 2019 sequences we downloaded from ... 
+
+Our files were in fastqz
+
+We used X programs loaded with a conda environment on the RON computing cluster ...
+
+or
+
+We ran our analysis on a laptop...
+
+We ran into this issue...
+
+## Findings
+
+![plot](plots/fst_div.png)
+Figure 1. Provide figure descriptions- indicate how figure was made (programs), with which data. Make sure to cite everything you used. 
+
+### Note:
+To add a plot from the 'figs' folder, there needs to be a line in this document that looks like this:
+```
+![plot](figs/plotfile.png)
+```
