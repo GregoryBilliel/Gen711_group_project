@@ -18,3 +18,5 @@ chmod +x ../code/polyGfilter.sh
 ../code/polyGfilter.sh ${polyg_len}
 
 Greg: ported the code folder files in and organized the project repo a little bit
+
+Greg: Copied the data for the project into the director and made the pull request for it
