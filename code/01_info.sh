@@ -1,19 +1,24 @@
 #!/bin/bash
 conda activate genomics
 
-cd ~/Gen711_group_project
+cd ~/myrepo
+
+## make output directories. Only need to do this once. 
+mkdir -p poly-G-trimmed html results metadata data/fastqs
+
+### New polyG filter only
+cd data/fastqs
 
 polyg_len=200 ## copied from qiime2_parameters.sh
 
-## echo $polyg_len , double checks it worked
-
 ### Run polyG filter. This will remove polyG tails and also filter out reads that are too short after trimming.
-chmod +x code/polyGfilter.sh
+chmod +x ../code/polyGfilter.sh
 
-### This is the same as..
-code/polyGfilter.sh ${polyg_len}
-### this
-code/polyGfilter.sh 200 
+../code/polyGfilter.sh ${polyg_len}
+
+../code/polyGfilter.sh 200 
+## or, similarly, you could run it like this: 
+## ./code/polyGfilter.sh 200
 
 ## Remove empty files before qiime import
 find data/poly-G-trimmed/ -size 0 -print -delete
