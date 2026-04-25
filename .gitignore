@@ -1,4 +1,4 @@
 data/fastqs/*
-refdb/*
+refdbs/*
 data/poly-G-trimmed/*
 data/results/*
