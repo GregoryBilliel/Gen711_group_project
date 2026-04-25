@@ -1,7 +1,7 @@
 #!/bin/bash
 conda activate genomics
 
-cd ~/myrepo
+cd ~/Gen711_group_project
 
 ## make output directories. Only need to do this once. 
 mkdir -p poly-G-trimmed html results metadata data/fastqs

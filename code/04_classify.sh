@@ -3,7 +3,7 @@
 made changes here
 
 primer="16s_V4-V5"
-projname="YOURPROJ_${primer}"
+projname="Cyanobacteria_${primer}"
 
 ## Classifiy
 refreads=${refdbs/16s/ref_seqs_16S_V4-V5.qza}
