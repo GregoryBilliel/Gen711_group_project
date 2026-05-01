@@ -2,3 +2,4 @@ data/fastqs/*
 refdbs/*
 data/poly-G-trimmed/*
 data/results/*
+data/html/*
