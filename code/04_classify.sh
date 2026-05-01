@@ -6,6 +6,10 @@
 primer="16s_V4-V5"
 projname="Cyanobacteria_${primer}"
 
+cp /tmp/GEN711-811_data/refdbs/ref_seqs_16S_V4-V5.qza ~/Gen711_group_project/refdbs
+cp /tmp/GEN711-811_data/99_otus_16S_taxonomy.qza ~/Gen711_group_project/refdbs
+cp /tmp/GEN711-811_data/refdbs/silva_99_otus_16S_nb-classifier.qza ~/Gen711_group_project/refdbs
+
 ## Classify
 refreads="~/Gen711_group_project/refdbs/ref_seqs_16S_V4-V5.qza"
 reftax="~/Gen711_group_project/refdbs/99_otus_16S_taxonomy.qza"
