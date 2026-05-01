@@ -1,15 +1,16 @@
 #!/bin/bash
 ## Started by Greg
 
-made changes here
+## made changes here
 
 primer="16s_V4-V5"
 projname="Cyanobacteria_${primer}"
 
 ## Classifiy
-refreads=${refdbs/16s/ref_seqs_16S_V4-V5.qza}
-reftax=${refdbs/16s/99_otus_16S_taxonomy.qza}
-sklearn=${refdbs/16s/silva_99_otus_16S_nb-classifier.qza}
+refreads="~/Gen711_group_project/refdbs/ref_seqs_16S_V4-V5.qza"
+reftax="~/Gen711_group_project/refdbs/99_otus_16S_taxonomy.qza"
+sklearn="~/Gen711_group_project/refdbs/silva_99_otus_16S_nb-classifier.qza"
+
 
 ## copied from qiime2_parameters.sh
 maxaccepts=10
