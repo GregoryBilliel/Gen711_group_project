@@ -39,4 +39,6 @@ qiime demux summarize \
     --i-data data/results/${projname}_demux_cutadapt.qza \
     --o-visualization data/results/${projname}_demux_cutadapt.qzv
 
+## can do: mv ~/Gen711_group_project/data/results/Cyanobacteria_16s_V4-V5_demux_cutadapt.qzv ~/Gen711_group_project/plots if you need to
+
 ## Finished by Greg

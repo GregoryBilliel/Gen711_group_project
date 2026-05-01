@@ -1,7 +1,5 @@
 #!/bin/bash
 
-## Started by Greg
-
 conda activate genomics
 
 cd ~/Gen711_group_project
@@ -27,5 +25,3 @@ chmod +x ../code/polyGfilter.sh
 find data/poly-G-trimmed/ -size 0 -print -delete
 
 ## Proceed to 02_cutadapt.sh
-
-## Finished by Greg

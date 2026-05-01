@@ -6,7 +6,7 @@
 primer="16s_V4-V5"
 projname="Cyanobacteria_${primer}"
 
-## Classifiy
+## Classify
 refreads="~/Gen711_group_project/refdbs/ref_seqs_16S_V4-V5.qza"
 reftax="~/Gen711_group_project/refdbs/99_otus_16S_taxonomy.qza"
 sklearn="~/Gen711_group_project/refdbs/silva_99_otus_16S_nb-classifier.qza"
@@ -17,8 +17,9 @@ maxaccepts=10
 query_cov=0.75 
 perc_identity=0.75 
 weak_id=0.65
+threads=16
 
-## can set threads to equal what you want, I went with threads=16 and it took about 50~ minutes to run this 
+## Greg: can set threads to equal what you want, I went with threads=16 and it took about 50~ minutes to run this 
 ## I think the max is 24 you can set it to
 
 qiime feature-classifier classify-hybrid-vsearch-sklearn \
