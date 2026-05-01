@@ -1,4 +1,7 @@
 #!/bin/bash
+
+## Started by Greg
+
 conda activate genomics
 
 cd ~/Gen711_group_project
@@ -21,6 +24,8 @@ chmod +x ../code/polyGfilter.sh
 ## ./code/polyGfilter.sh 200
 
 ## Remove empty files before qiime import
-find poly-G-trimmed/ -size 0 -print -delete
+find data/poly-G-trimmed/ -size 0 -print -delete
 
 ## Proceed to 02_cutadapt.sh
+
+## Finished by Greg

@@ -1,4 +1,5 @@
 #!/bin/bash
+## Started by Greg
 
 made changes here
 
@@ -30,3 +31,5 @@ qiime feature-classifier classify-hybrid-vsearch-sklearn \
   --p-min-consensus 0.51 \
   --p-confidence 0.7 \
   --o-classification data/results/${projname}_hybrid_taxonomy
+
+## finished by Greg

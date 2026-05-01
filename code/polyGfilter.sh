@@ -11,9 +11,9 @@ echo "polyG filter will remove polyG tails and also filter out reads that are to
      fastp \
      --in1 $f \
      --in2 $r \
-     --html html/${f%_L002_R1_001.fastq.gz}.html \
-     --out1 poly-G-trimmed/$f \
-     --out2 poly-G-trimmed/$r \
+     --html data/html/${f%_L002_R1_001.fastq.gz}.html \
+     --out1 data/poly-G-trimmed/$f \
+     --out2 data/poly-G-trimmed/$r \
      --cut_tail \
      --poly_g_min_len 4 \
      --cut_tail_mean_quality 25 \
@@ -31,5 +31,5 @@ echo -e "\npolyG filter complete.\n"
 echo "counting reads before and after polyG filter...\n"
 
 for fq in *R1_001.fastq.gz ; do 
-    echo "$(basename $fq | sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $fq | grep '^@' | wc -l) $(zcat poly-G-trimmed/$fq | grep '^@' | wc -l)" 
+    echo "$(basename $fq | sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $fq | grep '^@' | wc -l) $(zcat data/poly-G-trimmed/$fq | grep '^@' | wc -l)" 
 done | sort -k2 -h | awk -v OFS='\t' '{ print $1,$2,$3 }'
