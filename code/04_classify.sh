@@ -18,6 +18,9 @@ query_cov=0.75
 perc_identity=0.75 
 weak_id=0.65
 
+## can set threads to equal what you want, I went with threads=16 and it took about 50~ minutes to run this 
+## I think the max is 24 you can set it to
+
 qiime feature-classifier classify-hybrid-vsearch-sklearn \
   --i-query data/results/${projname}_rep-seqs.qza \
   --i-classifier ${sklearn} \
