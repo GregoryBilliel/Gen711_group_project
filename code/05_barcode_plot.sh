@@ -10,7 +10,7 @@ conda activate qiime2-amplicon-2026.1
 qiime taxa barplot \
   --i-table data/results/${projname}_table.qza \
   --i-taxonomy data/results/${projname}_hybrid_taxonomy.qza \
-  --m-metadata-file metadata/metadata-update.tsv \
+  --m-metadata-file data/metadata/metadata-update.tsv \
   --o-visualization data/results/${projname}_taxa_barplot.qzv
 
 ## To view the interactive barplot, you can use the qiime2 view command or upload the .qzv file to https://view.qiime2.org/ to interactively explore the plot. You can also export the plot as a .png file. Screenshots of the barplots work as well
@@ -27,7 +27,7 @@ qiime feature-table filter-features \
 qiime taxa barplot \
   --i-table data/results/${projname}_filtered-table.qza \
   --i-taxonomy data/results/${projname}_hybrid_taxonomy.qza \
-  --m-metadata-file metadata/metadata-update.tsv \
+  --m-metadata-file data/metadata/metadata-update.tsv \
   --o-visualization plots/${projname}_taxa_barplot.qzv
 
 ## Make a phylogenetic tree and run core metrics to get the alpha and beta diversity metrics for each sample. This will be used in the next script to create a PCoA plot of the beta diversity metrics.
@@ -46,7 +46,7 @@ qiime diversity core-metrics-phylogenetic \
     --i-table data/results/${projname}_samp_filtered-table.qza \
     --p-with-replacement \
     --p-sampling-depth 500 \
-    --m-metadata-file metadata/${projname}_metadata.tsv \
+    --m-metadata-file data/metadata/${projname}_metadata.tsv \
     --output-dir data/results/${projname}_core-metrics-data/
 
 ## If you need to re-run the diversity core-metrics-phylogenetic command, you will need to delete the data/results/${projname}_core-metrics-data/ directory before re-running the command, otherwise you will get an error about the directory already existing. You can do this with the following command:    
